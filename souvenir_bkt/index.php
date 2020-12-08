@@ -178,7 +178,7 @@ require("../connect.php");
 
 <script type="text/javascript">
 
-var server = "https://iisi-souvenir-agung.herokuapp.com/";
+var server = "https://iisi-souvenir-agung.herokuapp.com/souvenir_bkt";
 var map;
 var markersDua = [];
 var koordinat = 'null'
