@@ -427,15 +427,15 @@ session_start();
                       <header class="panel-heading" style="float:left">
                       <label style="color: black; margin-right:5px">Google Map with Location List</label>
                       <button type="button" onclick="posisisekarang()" class="btn btn-success" style=" color: white;" data-toggle="tooltip" id="posisinow" title="geolocation" 
-                    style="margin-right: 2px;" ><i class="fa fa-location-arrow" > </i>
+                    style="margin-right: 2px;" ><i class="fa fa-location-arrow" style="color:white;" > </i>
                       </button>
 
                        <button type="button" onclick="lokasimanual()" class="btn btn-success"  data-toggle="tooltip" id="posmanual" title="Manual Position" 
-                              style="margin-right: 2px;"><i class="fa fa-map-marker" ></i>
+                              style="margin-right: 2px;"><i class="fa fa-map-marker" style="color:white;" ></i>
                       </button>
                                             
                        <label id="tombol">
-                       <a type="button" onclick="legenda()" id="showlegenda" class="btn btn-success" data-toggle="tooltip" title="Legend" style="margin-right: 2px;"><i class="fa fa-eye"></i>
+                       <a type="button" onclick="legenda()" id="showlegenda" class="btn btn-success" data-toggle="tooltip" title="Legend" style="margin-right: 2px;"><i class="fa fa-eye" style="color:white;"></i>
                        </a>
                        </label>
                               </header>
