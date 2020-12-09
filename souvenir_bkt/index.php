@@ -71,7 +71,7 @@ require("../connect.php");
       .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 55%;
         width: auto;
         padding: 16px;
         margin-top: -50px;
@@ -88,7 +88,7 @@ require("../connect.php");
       .next1 {
         cursor: pointer;
         position: absolute;
-        top: 83%;
+        top: 89%;
         width: auto;
         padding: 10px;
         margin-top: 1px;
@@ -176,9 +176,10 @@ require("../connect.php");
   <link rel="stylesheet" href="assets/css/bootstrap-slider.css" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+
 <script type="text/javascript">
 
-var server = "https://iisi-souvenir-agung.herokuapp.com/souvenir_bkt/";
+var server = "https://bdlsouvenirringgoagsya.herokuapp.com/souvenir_bkt/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
@@ -3404,7 +3405,7 @@ function industri_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
               });
             markersDua.push(marker);
             map.setCenter(centerBaru);
-            $('#hasilcariind').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoik(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='ikangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcariind').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoik(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='ikangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3436,7 +3437,7 @@ function restaurant_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
               });
             markersDua.push(marker);
             map.setCenter(centerBaru);
-            $('#hasilcarirestaurant').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinforestaurant(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='restaurantangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcarirestaurant').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinforestaurant(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='restaurantangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3476,7 +3477,7 @@ function kuliner_sekitar(latitude,longitude,rad){ //KULINER SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcariculi').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detculi(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='kulAngkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcariculi').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detculi(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='kulAngkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         }
@@ -3510,7 +3511,7 @@ function masjid_sekitar(latitude,longitude,rad){ // MASJID SEKITAR
             markersDua.push(marker);
             map.setCenter(centerBaru);
 
-            $('#hasilcarimosque').append("<tr><td class='col-lg-2'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfomosque(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='worshipangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcarimosque').append("<tr><td class='col-lg-2'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfomosque(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='worshipangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3545,7 +3546,7 @@ function oleholeh_sekitar(latitude,longitude,rad){ // OLEH-OLEH SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcarisouv').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfosou(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='souangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcarisouv').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfosou(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='souangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         } 
@@ -3581,7 +3582,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcariobj').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoobj(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='owangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcariobj').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoobj(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='owangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
 
@@ -3620,7 +3621,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
               map.setCenter(centerBaru);
               console.log(rad);
 
-              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         }
@@ -4389,7 +4390,7 @@ aktifkanRadiuss4();
             </div>
 
             <!--logo start-->
-            <a class="logo" ><font face="Courier New">WebGis Souvenir (22 1811523001 Muhammad Agung Mahardhika)</font> <img src=""></a>
+            <a class="logo" ><font face="Courier New">WebGis Souvenir (22 1811522023 Ringgo Sahara AL)</font> <img src=""></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -5003,11 +5004,11 @@ aktifkanRadiuss4();
                 <div  class="col-md-4 col-sm-4 mb">  
                   <div class="row">                   
                       <div class="col-md-11 col-sm-12 mb">
-                        <div class="white-panel pns" style="height: 530px">
+                        <div class="white-panel pns" style="height: 510px">
                           <header class="panel-heading" style=" width: 100%"  >
                             <label class="btn btn-compose" style="background-color:black;border-colom: 1px solid black" id="judul_table" style="margin-bottom: 0px">Popular Souvenir</label>
                           </header>
-                          <div style="height:530px;  margin:5px;">
+                          <div style="height:510px;  margin:20px;">
                             <div class="slideshow-container">
                                <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
@@ -5033,7 +5034,7 @@ aktifkanRadiuss4();
                               <a class="prev" onclick="plusSlides(-1)">❮</a>
                               <a class="next" onclick="plusSlides(1)">❯</a>
                              </div> 
-                             <br>
+                            <br>
                             <div class="slideshow-container">
                               <div class="column">
                                 <img class="demo cursor" src="../_foto/sanjai.png" style="width:100%" onclick="currentSlide(1)">
