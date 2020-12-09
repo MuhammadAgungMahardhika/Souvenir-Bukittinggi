@@ -179,7 +179,7 @@ require("../connect.php");
 
 <script type="text/javascript">
 
-var server = "https://bdlsouvenirringgoagsya.herokuapp.com/souvenir_bkt/";
+var server = "https://iisi-souvenir-agung.herokuapp.com/souvenir_bkt/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
@@ -4390,7 +4390,7 @@ aktifkanRadiuss4();
             </div>
 
             <!--logo start-->
-            <a class="logo" ><font face="Courier New">WebGis Souvenir (22 1811522023 Ringgo Sahara AL)</font> <img src=""></a>
+            <a class="logo" ><font face="Courier New">WebGis Souvenir (22 1811523001 Muhammad Agung Mahardhika)</font> <img src=""></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
